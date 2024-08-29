@@ -16,6 +16,9 @@ public class SupplierDemo1 {
 
         List<String> list = Arrays.asList();
         System.out.println(list.stream().findAny().orElseGet(supplier));
+        System.out.println();
+
+        System.out.println(list.stream().findAny().orElseGet(()-> "Hi Harish"));
 
 
     }
